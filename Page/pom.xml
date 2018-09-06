@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>AutoTest03</groupId>
+  <artifactId>Page</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Page Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <!-- 加入testng依赖包 -->
+    <dependency>
+    	<groupId>org.testng</groupId>
+    	<artifactId>testng</artifactId>
+    	<version>6.14.3</version>
+    	<scope>test</scope>
+	</dependency>
+	<!-- 加入selenium做webUI测试,选用selenium3 -->
+	<dependency>
+    	<groupId>org.seleniumhq.selenium</groupId>
+    	<artifactId>selenium-java</artifactId>
+    	<version>3.14.0</version>
+	</dependency>
+	<!-- 依赖Guice -->
+	<dependency>
+    <groupId>com.google.inject</groupId>
+    	<artifactId>guice</artifactId>
+    	<version>4.1.0</version>
+    	<classifier>no_aop</classifier>
+    	<scope>test</scope>
+ 	</dependency>
+  </dependencies>
+  <build>
+    <finalName>Page</finalName>
+  </build>
+</project>
